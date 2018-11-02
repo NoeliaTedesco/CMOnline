@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="SuitePortalSua" parallel="false" preserve-order="true">		
-
-	<parameter name="usuario"  					value="SS32756870"/>
-	<parameter name="password"  				value="intranet04"/>
-	<parameter name="ambiente" 					value="testing"/>
-	<parameter name="browser"  					value="iexplorer"/>
+<suite name="CMOonline" parallel="false" preserve-order="true">		
 	
 	<!-- CONFIGURACION SELENIUM GRID 
 		Se debe ejecutar el siguiente comando en la pc HUB - donde se encuentra el proyecto selenium (eclipse)

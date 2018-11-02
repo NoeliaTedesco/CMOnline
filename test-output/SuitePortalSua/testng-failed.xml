@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuitePortalSua]">
+  <parameter name="password" value="intranet04"/>
+  <parameter name="ambiente" value="testing"/>
+  <parameter name="browser" value="iexplorer"/>
+  <parameter name="usuario" value="SS32756870"/>
+  <parameter name="path_ScreenShotOnFailure" value="C://SCREENSHOTS"/>
+  <parameter name="rol" value="Prestador"/>
+  <parameter name="ipNodo" value="http://100.1.3.71:5555/wd/hub"/>
+  <test thread-count="5" name="Test de Prestadores(failed)">
+    <parameter name="usuario" value="cmotest5@cmo.com"/>
+    <parameter name="contrasena" value="cmotest5"/>
+    <classes>
+      <class name="ar.com.osde.cmonline.testng.Test_Prestadores">
+        <methods>
+          <include name="startUp"/>
+          <include name="invitaciones" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ar.com.osde.cmonline.testng.Test_Prestadores -->
+    </classes>
+  </test> <!-- Test de Prestadores(failed) -->
+</suite> <!-- Failed suite [SuitePortalSua] -->

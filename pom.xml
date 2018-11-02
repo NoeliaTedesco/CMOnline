@@ -22,7 +22,8 @@
 	<properties>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
+		<suiteXmlFile>C:\Users\ntedesco\git\CMOnlineV2\CMOnline\src\test\java\ar\com\osde\cmonline\suite_xml/suite_Prestadores.xml</suiteXmlFile>
+		<skipTests>true</skipTests>
 	</properties>
 
 	<dependencies>
@@ -43,6 +44,13 @@
 			<artifactId>selenium-support</artifactId>
 			<version>3.0.1</version>
 		</dependency>
-	</dependencies>
 
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 </project>

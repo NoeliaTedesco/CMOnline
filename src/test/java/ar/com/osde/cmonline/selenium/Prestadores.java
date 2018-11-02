@@ -76,6 +76,36 @@ public class Prestadores {
 	@FindBy (css ="i.fa.fa-2x.fa-mail-forward")
 	private WebElement btnReenviarInvitacion;
 	
+	@FindBy (xpath = ("(.//*[normalize-space(text()) and normalize-space(.)='Exportar'])[1]/following::input[1]"))
+	private WebElement checkSoloActivas;
+	
+	@FindBy (xpath = ("(.//*[normalize-space(text()) and normalize-space(.)='actualizado: 10:17:41 hs'])[1]/following::button[1]"))
+	private WebElement btnExportarInv;
+	
+	@FindBy (name = "desde")
+	private WebElement calendDesde;
+	
+	@FindBy (name = "hasta")
+	private WebElement calendHasta;
+	
+	@FindBy (xpath = ("(.//*[normalize-space(text()) and normalize-space(.)='Salir'])[1]/following::button[1]"))
+	private WebElement btnExportar;
+	
+	@FindBy (css = "div.toast-message")
+	private WebElement alertas;
+	
+	@FindBy (xpath = ("//a[contains(text(),'Cambiar contraseña')]"))
+	private WebElement menuCambiarContrasena;
+	
+	@FindBy (id = "newPassword")
+	private WebElement cmpNuevaContrasena;
+	
+	@FindBy (id = "repeatNewPassword")
+	private WebElement cmpRepNuevaContrasena;
+	
+	@FindBy (id = "btSalir")
+	private WebElement btnSalir;
+	
 	public Prestadores(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver,this);		
